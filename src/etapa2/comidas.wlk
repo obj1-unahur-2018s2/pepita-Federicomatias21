@@ -39,7 +39,45 @@ object mijo{
   	}
 	
 	
-//	method secar() {return }
 	
 }
-// despues, agregar mijo y canelones
+object canelon {
+	var estadoCanelon = 0 
+	method energiaPorGramo () {return estadoCanelon}
+	method solo (){
+		
+		estadoCanelon = 20
+		 console.println ("Canelon solo")
+	}
+	method salSa (){
+		estadoCanelon = estadoCanelon +5
+			console.println ("Agregando salsa al canelon ;)")
+	}
+	
+	method queSo (){
+		
+		estadoCanelon =  estadoCanelon +7
+			console.println ("Agregando queso al canelon ;)")
+	}
+	
+	method quitarTodo(){
+		
+		if (estadoCanelon>20)
+		{
+			estadoCanelon=20
+
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
